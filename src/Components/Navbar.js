@@ -48,9 +48,9 @@ const Navbar = (props) => {
 
                                     <span className="margin-left-10"><i className="fa fa-rss-square margin-right-5"></i> Feeds</span>
 
-                                    <span className="margin-left-10"><i className="fa fa-envelope font-size-18"></i></span>
+                                    <span className="margin-left-10"><i className="fa fa-envelope font-size-18"></i><sup>10</sup></span>
 
-                                    <span className="margin-left-10"><i className="fa fa-bell-o font-size-18"></i></span>
+                                    <span className="margin-left-10"><i className="fa fa-bell-o font-size-18"></i><sup>2</sup></span>
 
                                     <span className="margin-left-10"><i className="fa fa-cog font-size-18"></i></span>
                                 </div>
