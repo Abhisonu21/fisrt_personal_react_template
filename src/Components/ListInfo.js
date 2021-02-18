@@ -3,8 +3,8 @@ import React from 'react';
 const ListInfo = (props) => {
 
     let lists = props.name.map((data,id) => {
-        return <p key={id}>
-                    <img src={data.img} style={{width:'40px'}} alt="mahek Jain" className="margin-right-10" />
+        return <p key={id} style={{marginBottom: '15px'}}>
+                    <img src={data.img} style={{width:'40px', float:'left'}} alt="mahek Jain" className="margin-right-10" />
                     <span className="font-bold">{data.name}</span> {props.review} <span className="font-bold">{props.pro}</span> {props.article} {data.duration}
                 </p>
     })
