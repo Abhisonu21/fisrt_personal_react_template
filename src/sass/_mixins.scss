@@ -1,0 +1,147 @@
+@mixin radius($radius)
+{ 
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin box-shadow($shadow-prop...)
+{
+	box-shadow: $shadow-prop;
+	-moz-box-shadow: $shadow-prop;
+	-webkit-box-shadow: $shadow-prop;
+}
+
+@mixin text-shadow($h-pos:0px, $v-pos:0px, $blur:0px, $shadow-color:rgba(0,0,0,.25))
+{
+  -webkit-text-shadow: $h-pos $v-pos $blur $shadow-color;
+	-moz-text-shadow: $h-pos $v-pos $blur $shadow-color;
+  text-shadow: $h-pos $v-pos $blur $shadow-color;
+}
+
+@mixin transition($sec_ease...)
+{
+  -webkit-transition:$sec_ease;
+  -moz-transition:$sec_ease;
+  -o-transition:$sec_ease;
+  transition:$sec_ease;
+}
+
+@mixin transform($transforms) {
+     -moz-transform: $transforms;
+       -o-transform: $transforms;
+      -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+          transform: $transforms;
+}
+// rotate
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+ 
+// scale
+@mixin scale($scale) {
+   @include transform(scale($scale));
+} 
+// translate
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+// skew
+@mixin skew ($x, $y) {
+   @include transform(skew(#{$x}deg, #{$y}deg));
+}
+//transform origin
+@mixin transform-origin ($origin) {
+    moz-transform-origin: $origin;
+       -o-transform-origin: $origin;
+      -ms-transform-origin: $origin;
+  -webkit-transform-origin: $origin;
+          transform-origin: $origin;
+}
+
+// Blur
+@mixin filter($filter_name){
+   -moz-filter: $filter_name;
+       -o-filter: $filter_name;
+      -ms-filter: $filter_name;
+  -webkit-filter: $filter_name;
+          filter: $filter_name;
+}
+
+@mixin blur($blur_value){
+  @include filter(blur($blur_value));
+}
+
+
+//Animation
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }  
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }  
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+
+
+@mixin break($args...)
+{
+  @if length($args) == 1
+  {
+    @media (min-width: nth($args, 1))
+    {
+      @content;
+    }
+  } 
+ @else 
+  {
+   @media (min-width: nth($args, 1)) and (max-width: nth($args, 2))
+    {
+      @content;
+    }
+  }
+
+}
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
+}
+
+@mixin linearGradient($top, $bottom, $pos1:0%, $pos2:100%){
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(top,  $top $pos2, $bottom $pos2); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop($pos1,$top), color-stop($pos2,$bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $top $pos1,$bottom $pos2); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $top $pos1,$bottom $pos2); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $top $pos1,$bottom $pos2); /* IE10+ */
+    background: linear-gradient(to bottom,  $top $pos1,$bottom $pos2); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+
+
+
