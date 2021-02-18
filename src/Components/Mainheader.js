@@ -14,7 +14,7 @@ const MainHeader = (props) => {
                                     <div className="col-12 col-md-8 col-lg-8">
                                         <div className="row">
                                             <div className="col-12 col-sm-5 col-md-4 col-lg-3">
-                                                <img src={props.imgsrc} class="img-fluid display-inline" alt="thumb1" />
+                                                <img src={props.imgsrc} class="img-fluid display-inline margin-bottom-15" alt="thumb1" />
                                             </div>
 
                                             <div className="col-12 col-sm-7 col-md-8 col-lg-9 info-sec">
