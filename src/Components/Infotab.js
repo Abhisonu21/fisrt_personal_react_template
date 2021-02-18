@@ -19,7 +19,7 @@ const Infotab = (props) => {
 
                                 <div className="main-content-body">
                                 
-                                    <TabContent main_user={Thumb1} user_name="Mahek Jain" subject="Review Recong Peo" duration="2 seconds"/>
+                                    <TabContent main_user={Thumb1} user_name="Mahek Jain" subject="Review" subject1="Recong Peo" duration="2 seconds"/>
 
                                     <Photo other_image1={Thumb1} other_image2={Thumb1} other_image3={Thumb1} other_image4={Thumb1} />
 
@@ -27,13 +27,13 @@ const Infotab = (props) => {
                                 </div>
                                 
                                 <div className="main-content-body">
-                                    <TabContent main_user={Thumb1} user_name="Mahek Jain" subject="Review Recong Peo" duration="2 seconds" / >
+                                    <TabContent main_user={Thumb1} user_name="Mahek Jain" subject="Commented on Recong Peo" subject1="review" duration="2 seconds" / >
                                     
                                     <Comment comment="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." url="https://www.google.com" read="Read More"/>
                                 </div>
 
                                 <div className="main-content-body">
-                                    <TabContent main_user={Thumb1} user_name="Mahek Jain" subject="Review Recong Peo" duration="2 seconds" />
+                                    <TabContent main_user={Thumb1} user_name="Mahek Jain" subject="Recommended" subject1="Kaza" duration="2 seconds" />
 
                                     <TabContent main_user={Thumb1} user_name="Kaza" location="Spiti Valley, Himachal Pradesh" aname="Add to Wishlist" />
 
@@ -41,7 +41,7 @@ const Infotab = (props) => {
                                 </div>
 
                                 <div className="main-content-body">
-                                    <TabContent main_user={Thumb1} user_name="Mahek Jain" subject="Review Recong Peo" duration="2 seconds" />
+                                    <TabContent main_user={Thumb1} user_name="Mahek Jain" subject="Followed" subject1="Shakshi Goel" duration="2 seconds" />
                                     
                                     <TabContent main_user={Thumb1} user_name="Shakshi Goel" location="New Delhi, India" aname="Follow" />
 
