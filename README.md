@@ -11,6 +11,26 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+### `npm install node-sass --save`
+
+It install the SASS which is used as a CSS preprocesser
+
+### `npm install font-awesome --save`
+
+It install the Font awesome Library, which is used for the icon
+
+### `npm install react-bootstrap bootstrap --save`
+
+It install bootstrap as well as react-bootstrap Library which help to make the UI responsive
+
+### `npm install jquery --save`
+
+It install Jquery library
+
+### `npm install react-router-dom --save`
+
+It install react router which help to create navigation
+
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
